@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hand Gesture Recognition</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <h1>Hand Gesture Recognition</h1>
+    <div>
+        <img src="{{ url_for('video_feed') }}" id="video_feed">
+    </div>
+    <button onclick="stopAudio()">Stop Audio</button>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
